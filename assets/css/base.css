@@ -52,6 +52,7 @@
   --border-black: #000000;
   
   /* ==================== BORDER RADIUS ==================== */
+  --radius-sm: 0.25rem;          /* 4px */
   --radius-default: 0.5rem;      /* 8px */
   --radius-lg: 0.75rem;          /* 12px */
   --radius-xl: 1rem;             /* 16px */
@@ -128,11 +129,12 @@
   /* Logo/Icon */
   --logo-size: 2rem;              /* 32px - size-8 */
   --icon-sm: 1rem;                /* 16px */
-  --icon-md: 1.25rem;             /* 20px */
-  --icon-lg: 1.5rem;              /* 24px */
-  --icon-xl: 2rem;                /* 32px */
-  --icon-2xl: 3rem;               /* 48px */
-  --icon-3xl: 3.75rem;            /* 60px */
+  --icon-md: 1.125rem;            /* 18px */
+  --icon-lg: 1.175rem;            /* 20px */
+  --icon-xl: 1.5rem;              /* 24px */
+  --icon-2xl: 2rem;               /* 32px */
+  --icon-3xl: 3rem;               /* 48px */
+  --icon-4xl: 4rem;               /* 64px */
   
   /* Buttons */
   --button-height-sm: 2.5rem;     /* 40px - h-10 */
@@ -232,7 +234,8 @@
   --icon-default-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   
   /* Badge/Tag */
-  --badge-padding-x: 0.5rem;
+  --badge-padding-x-sm: 0.5rem;    /* 8px - px-2 */
+  --badge-padding-x: 0.75rem;
   --badge-padding-y: 0.25rem;
   
   /* Selection (text highlight) */
@@ -250,7 +253,6 @@
 }
 
 /* ==================== ESTILIZAÇÕES BASE ==================== */
-
 html{
     scroll-behavior: smooth;
 }
@@ -258,11 +260,11 @@ html{
 body{
     font-family: var(--font-body);
     font-size: var(--font-base);
-    font-weight: var(--font-normal);
+    font-weight: var(--font-normal); 
     line-height: var(--line-height-normal);
     background-color: var(--background-dark);
     color: var(--text-white);
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{

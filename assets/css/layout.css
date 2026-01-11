@@ -1,0 +1,17 @@
+.container{
+    margin-inline: auto;
+    padding-inline: var(--padding-container-desktop);
+}
+
+.header{
+    position: sticky;
+    top:0;
+    z-index: var(--z-sticky);
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+}

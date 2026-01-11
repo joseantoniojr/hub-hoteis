@@ -21,28 +21,27 @@
 </head>
 
 <body>
-    <header> <!-- Navigation -->
-        <h2>
-            <a href="/" aria-label="Página inicial">Hub Hotéis</a>
-        </h2>
-
-        <nav aria-label="Menu Principal">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="pages/about.html">Sobre</a></li>
-                <li><a href="pages/destinations.html">Destinos</a></li>
-                <li><a href="pages/rooms.html">Quartos</a></li>
-                <li><a href="pages/experiences.html">Experiências</a></li>
-                <li><a href="pages/coworking.html">Coworking</a></li>
-                <li><a href="pages/community.html">Comunidade</a></li>
-            </ul>
-        </nav>
-
-        <div>
-            <a href="#">Reserva</a>
-            <button aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">
-                <span class="material-symbols-rounded">menu</span>
-            </button>
+    <header class="header"> <!-- Navigation -->
+        <div class="container header__inner">
+            <h2 class="header__logo">
+                <a href="/" class="header__logo-link" aria-label="Página inicial">HUB Hotéis</a>
+            </h2>
+            <nav class="header__nav" aria-label="Menu Principal">
+                <ul class="header__nav-list">
+                    <li><a href="#home" class="header__nav-link">Home</a></li>
+                    <li><a href="pages/about.html" class="header__nav-link">Sobre</a></li>
+                    <li><a href="pages/destinations.html" class="header__nav-link">Destinos</a></li>
+                    <li><a href="pages/rooms.html" class="header__nav-link">Quartos</a></li>
+                    <li><a href="pages/experiences.html" class="header__nav-link">Experiências</a></li>
+                    <li><a href="pages/coworking.html" class="header__nav-link">Coworking</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button class="button button--circle button--sm button--primary">Reservar Agora</button>
+                <button class="header__menu-toggle" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+            </div>
         </div>
     </header>
     
@@ -54,16 +53,20 @@
                     <div></div> <!-- Overlay -->
                 </div>
                 <div>
-                    <span>
-                        <span></span>
+                    <span class="badge badge--primary">
                         Disponível em SP, RJ e Floripa
                     </span>
-                    <h1>Sua Base <span>Urbana</span></h1>
+                    <h1>Sua Base <br>
+                        <span>Urbana</span>
+                    </h1>
                     <p>Hotel urbano pra quem vive conectado. Coworking, drinks e cama boa. Tudo num app, sem filas, sem
                         burocracia.</p>
                     <div>
-                        <a href="#">Reservar Agora</a>
-                        <a href="#">Conhecer a vibe</a>
+                        <button class="button button--circle button--md button--primary">Reservar Agora</button>
+                        <button class="button button--circle button--md button--secondary">
+                            Conhecer a vibe
+                            <span class="material-symbols-rounded">arrow_forward</span>
+                        </button>
                     </div>
                     <ul>
                         <li>
@@ -90,7 +93,7 @@
                         <div>
                             <label for="location">Onde?</label>
                             <div>
-                                <span></span><!-- Ícone de localização -->
+                                <span class="material-symbols-rounded">location_on</span><!-- Ícone de localização -->
                                 <select name="location">
                                     <option value="sao-paulo">São Paulo, SP</option>
                                     <option value="rio-de-janeiro">Rio de Janeiro, RJ</option>
@@ -101,14 +104,14 @@
                         <div>
                             <label for="checkin">Quando?</label>
                             <div>
-                                <span></span><!-- Ícone de calendário -->
+                                <span class="material-symbols-rounded">calendar_month</span><!-- Ícone de calendário -->
                                 <input type="date" name="checkin">
                             </div>
                         </div>
                         <div>
                             <label for="guests">Quem?</label>
                             <div>
-                                <span></span><!-- Ícone de usuário -->
+                                <span class="material-symbols-rounded">person</span><!-- Ícone de usuário -->
                                 <select name="guests">
                                     <option value="1-adulto">1 Hóspede</option>
                                     <option value="2-adultos">2 Hóspedes</option>
@@ -117,8 +120,8 @@
                             </div>
                         </div>
                         <div>
-                            <button type="submit">
-                                <span></span> <!-- Ícone de lupa -->
+                            <button type="submit" class="button button--square button--md button--primary">
+                                <span class="material-symbols-rounded">search</span> <!-- Ícone de lupa -->
                                 Buscar
                             </button>
                         </div>
@@ -136,23 +139,23 @@
                     </div>
 
                     <a href="#">Ver todos os benefícios 
-                        <span></span> <!-- Ícone de seta direita -->
+                        <span class="material-symbols-rounded">arrow_right_alt</span> <!-- Ícone de seta direita -->
                     </a>
                 </header>
 
                 <div>
                     <div>
-                        <span></span> <!-- Ícone de smartphone -->
+                        <span class="material-symbols-rounded">mobile_2</span> <!-- Ícone de smartphone -->
                         <h3>Check-in 100% Digital</h3>
                         <p>Chega, desbloqueia a porta pelo app e pronto. Sem filas na recepção, sem papelada chata. Seu celular é sua chave.</p>
                     </div>
                     <div>
-                        <span></span> <!-- Ícone de wi-fi -->
+                        <span class="material-symbols-rounded">wifi</span> <!-- Ícone de wi-fi -->
                         <h3>Hyper-fast Wi-Fi</h3>
                         <p>Conexão de fibra óptica dedicada em todos os cantos. Gamer, dev ou streamer, aqui não lagga. Garantido.</p>
                     </div>
                     <div>
-                        <span></span> <!-- Ícone de joystick -->
+                        <span class="material-symbols-rounded">sports_esports</span> <!-- Ícone de joystick -->
                         <h3>Play & Chill Areas</h3>
                         <p>Lounges híbridos perfeitos para calls, happy hour ou maratonar séries. Mesa de sinuca e PS5 liberados.</p>
                     </div>
@@ -211,7 +214,7 @@
 
                     <article>
                         <div>
-                            <span></span> <!-- Ícone de raio -->
+                            <span class="material-symbols-rounded">bolt</span> <!-- Ícone de raio -->
                             <h3>Eventos Semanais</h3>
                             <a href="#">Ver agenda</a>
                         </div>
