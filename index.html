@@ -22,7 +22,7 @@
 
 <body>
     <header class="header"> <!-- Navigation -->
-        <div class="container header__inner">
+        <div class="header__inner">
             <h2 class="header__logo">
                 <a href="/" class="header__logo-link" aria-label="Página inicial">HUB Hotéis</a>
             </h2>
@@ -46,42 +46,44 @@
     </header>
     
     <main> <!-- Main Content -->
-        <section> <!-- Home Section -->
-            <div>
-                <div> <!-- Background Section -->
-                    <div></div> <!-- Imagem ou banner -->
-                    <div></div> <!-- Overlay -->
+        <section class="hero"> <!-- Home Section -->
+            <div class="container hero__inner">
+                <div class="hero__background"> <!-- Background Section -->
+                    <div class="hero__background-overlay-hz"></div> <!-- Overlay -->
+                    <div class="hero__background-overlay-vt"></div> Overlay
+                    <div class="hero__background-image"></div> <!-- Imagem ou banner -->
                 </div>
-                <div>
-                    <span class="badge badge--primary">
-                        Disponível em SP, RJ e Floripa
-                    </span>
-                    <h1>Sua Base <br>
-                        <span>Urbana</span>
-                    </h1>
-                    <p>Hotel urbano pra quem vive conectado. Coworking, drinks e cama boa. Tudo num app, sem filas, sem
-                        burocracia.</p>
-                    <div>
-                        <button class="button button--circle button--md button--primary">Reservar Agora</button>
-                        <button class="button button--circle button--md button--secondary">
-                            Conhecer a vibe
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </button>
+                <div class="hero__layout">
+                    <div class="hero__content"> <!-- Content Section -->
+                        <span class="badge badge--primary">
+                            Disponível em SP, RJ e Floripa
+                        </span>
+                        <h1 class="hero__title">Sua Base <br>
+                            <span>Urbana</span>
+                        </h1>
+                        <p class="hero__description">Hotel urbano pra quem vive conectado. Coworking, drinks e cama boa. Tudo num app, sem filas, sem burocracia.</p>
+                        <div class="hero__actions">
+                            <button class="button button--circle button--md button--primary">Reservar Agora</button>
+                            <button class="button button--circle button--md button--secondary">
+                                Conhecer a vibe
+                                <span class="material-symbols-rounded">arrow_forward</span>
+                            </button>
+                        </div>
+                        <ul class="hero__stats"> <!-- Stats Section -->
+                            <li class="hero__stats-item">
+                                <strong>4.9/5</strong>
+                                <span>Avaliação App Store</span>
+                            </li>
+                            <li class="hero__stats-item">
+                                <strong>100%</strong>
+                                <span>Wi-Fi Fibra</span>
+                            </li>
+                            <li class="hero__stats-item">
+                                <strong>24h</strong>
+                                <span>Lounge Aberto</span>
+                            </li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>
-                            <strong>4.9/5</strong>
-                            <span>Avaliação App Store</span>
-                        </li>
-                        <li>
-                            <strong>100%</strong>
-                            <span>Wi-Fi Fibra</span>
-                        </li>
-                        <li>
-                            <strong>24h</strong>
-                            <span>Lounge Aberto</span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>

@@ -275,10 +275,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: var(--font-7xl);
+    font-size: var(--font-8xl);
     font-weight: var(--font-black);
-    letter-spacing: var(--letter-spacing-tighter);
-    line-height: 0.9;
+    line-height: 1;
     text-transform: uppercase;
 }
 
