@@ -61,7 +61,7 @@
   
   /* ==================== TIPOGRAFIA ==================== */
   /* Fontes do projeto */
-  --font-display: 'Outfit', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Noto Sans', sans-serif;
   
   /* Tamanhos de fonte usados no HTML */
@@ -258,7 +258,7 @@ html{
 }
 
 body{
-    font-family: var(--font-body);
+    font-family: var(--font-display);
     font-size: var(--font-base);
     font-weight: var(--font-normal); 
     line-height: var(--line-height-normal);
@@ -305,6 +305,34 @@ a{
 
 a:hover{
     color: var(--primary);
+}
+
+input, select, textarea{
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;
+    width: 100%;
+    font-family: var(--font-display);
+    font-size: var(--font-base);
+    font-weight: var(--font-medium);
+    line-height: 1.5rem;
+    background-color: transparent;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--border-white-30);
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+select{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right var(--space-2) center;
+    background-repeat: no-repeat;
+    background-size: var(--space-6) var(--space-6);
+}
+
+select option{
+    background-color: var(--surface-dark);
+    color: var(--text-white);
 }
 
 input::placeholder, textarea::placeholder{

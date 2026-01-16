@@ -13,7 +13,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
@@ -88,33 +88,33 @@
             </div>
         </section>
 
-        <section> <!-- Booking Search -->
-            <div>
-                <form action="" role="search" aria-label="Buscar disponibilidade">
-                    <div>
-                        <div>
-                            <label for="location">Onde?</label>
-                            <div>
+        <section class="booking"> <!-- Booking Search -->
+            <div class="container booking__inner">
+                <div class="booking__form">
+                    <form class="form" role="search" aria-label="Buscar disponibilidade">
+                        <div class="form__group">
+                            <label for="location" class="form__label">Onde?</label>
+                            <div class="form-group__wrapper">
                                 <span class="material-symbols-rounded">location_on</span><!-- Ícone de localização -->
-                                <select name="location">
+                                <select name="location" class="form__select" id="location">
                                     <option value="sao-paulo">São Paulo, SP</option>
                                     <option value="rio-de-janeiro">Rio de Janeiro, RJ</option>
                                     <option value="florianopolis">Florianópolis, SC</option>
                                 </select>
                             </div>
                         </div>
-                        <div>
-                            <label for="checkin">Quando?</label>
-                            <div>
+                        <div class="form__group">
+                            <label for="checkin" class="form__label">Quando?</label>
+                            <div class="form-group__wrapper">
                                 <span class="material-symbols-rounded">calendar_month</span><!-- Ícone de calendário -->
-                                <input type="date" name="checkin">
+                                <input type="date" name="checkin" class="form__input" id="checkin">
                             </div>
                         </div>
-                        <div>
-                            <label for="guests">Quem?</label>
-                            <div>
+                        <div class="form__group">
+                            <label for="guests" class="booking__label">Quem?</label>
+                            <div class="form-group__wrapper">
                                 <span class="material-symbols-rounded">person</span><!-- Ícone de usuário -->
-                                <select name="guests">
+                                <select name="guests" class="form__select" id="guests">
                                     <option value="1-adulto">1 Hóspede</option>
                                     <option value="2-adultos">2 Hóspedes</option>
                                     <option value="3-adultos">Galera (3+)</option>
@@ -127,8 +127,8 @@
                                 Buscar
                             </button>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
 
